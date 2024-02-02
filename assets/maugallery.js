@@ -154,7 +154,8 @@
         }
       });
       next =
-        imagesCollection[index] ||
+      //modifications de l'index en -1 pour le prevImage
+        imagesCollection[index -1] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -192,9 +193,11 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      //modifications de l'index en +1 pour le nextImage
+      next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
+
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
@@ -240,7 +243,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active-tag active"); //Ajout de la class "active" pour afficher la couleur sur tout les filtres
 
       var tag = $(this).data("images-toggle");
 
