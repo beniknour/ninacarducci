@@ -68,7 +68,7 @@ body {
 }
 
 .picture img {
-	width: 370px;
+	width: 365px;
 	height: auto;
 	max-width: 100%;
 
@@ -258,7 +258,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me, .about-me__introduction, #about-me p {
 		width: 100%;
 	}
 }
