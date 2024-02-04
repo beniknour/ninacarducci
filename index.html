@@ -4,17 +4,66 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Nina Carducci</title>
+	<!-- Description -->
+	<meta name="description" content="Photographe professionnelle basée à Bordeaux, Nina Carducci capture les moments précieux de votre vie avec passion et créativité. Découvrez son portfolio et ses services.">
+	<!-- Balise meta -->	
+	<meta property="og:site_name" content="Nina Carducci">
+    <meta property="og:locale" content="fr_FR">
+	<meta property="og:title" content="Nina Carducci">
+    <meta property="og:description" content="Photographe professionnelle à Bordeaux.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/beniknour/ninacarducci/main/assets/images/nina.webp?token=GHSAT0AAAAAACNU7CWYUDIZZYJDLZUMQSKUZN7SOWA">
+	<!-- il faut remplacer par lurl du site perso plus tard -->
+    <meta property="og:url" content="https://nina-carducci.github.io/"> 
+    <meta property="og:type" content="website">
+	<!-- Instagram -->
+	<meta property="og:profile" content="https://www.instagram.com/ninacarducci.photo/?hl=fr" />
+	<!-- Autoriser les robots d'exploration à analyser le contenu -->
+	<meta name="robots" content="index, follow">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.min.css" defer>
+	<link rel="stylesheet" href="./assets/style.css" defer>
 
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scripts.min.js" defer></script>
+
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci",
+			"image": "https://raw.githubusercontent.com/beniknour/ninacarducci/main/assets/images/nina.webp?token=GHSAT0AAAAAACNU7CWYUDIZZYJDLZUMQSKUZN7SOWA",
+			"@id": "https://ninacarducci.github.io/",
+			"url": "https://ninacarducci.github.io/",
+			"telephone": "+33 5 56 67 78 89",
+			"priceRange": "50€-400€",
+			"address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "postalCode": "33200",
+			  "addressCountry": "France"
+			},
+			"geo": {
+			  "@type": "GeoCoordinates",
+			  "latitude": "44.84676",
+			  "longitude": "-0.60659"
+			},
+			"openingHoursSpecification": [
+			  {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"],
+				"opens": "10:00",
+				"closes": "19:00"
+			  }
+			]
+		  }
+	</script>
 </head>
 <body>
 <header class="top-header">
@@ -60,7 +109,7 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci, photographe professionnelle.">
+		<img src="./assets/images/nina.webp" width="355" height="320" alt="Portrait de Nina Carducci, photographe professionnelle.">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -153,7 +202,7 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="Appareil photo.">
+			<img src="./assets/images/camera.webp" width="355" height="320" alt="Appareil photo.">
 		</div>
 	</div>
 </div>
