@@ -69,10 +69,8 @@ body {
 }
 
 .picture img {
-	width: 365px;
+	width: 100%;
 	height: auto;
-	max-width: 100%;
-
 }
 #about-me {
 	flex: 2
